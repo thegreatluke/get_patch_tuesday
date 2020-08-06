@@ -10,8 +10,6 @@ parser = argparse.ArgumentParser(description='Get patch tuesday for a given year
 parser.add_argument('year', nargs='?', help='The year, example 2020', default=now, type=int)
 args = parser.parse_args()
 
-#print(this_year)
-
 for month in range (1,13):
     cal = calendar.monthcalendar(args.year, month)
     # Second Tuesday will be in the second or third week of the month
